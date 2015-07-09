@@ -2,7 +2,13 @@ var utter = require("com.jamiefisher.utterance");
 
 
 
-utter.setup();
+utter.setup({
+    volume: 10,
+    rate: 1,
+    voice: null
+});
+
+
 utter.talk({
     rate: 0.2,
     text: "At the start of time there was...",
