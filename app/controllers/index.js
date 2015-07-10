@@ -114,6 +114,7 @@ function speakInEnglish(){
 
 outburst.addEventListener("paragraphRead", function(e){
   var position = e.paragraphIndex;
+  console.log(position + 1);
   if (currentStoryBeingRead.length != (position + 1)){
     $.presentationText.text = currentStoryBeingRead[position + 1].text;
   }
