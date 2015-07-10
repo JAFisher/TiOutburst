@@ -26,7 +26,7 @@ Objects Constructs
 
 **@volume**: **@Float** the volume level of the spoken Utterance.
 
-    Min: value 0.1
+    Min: 0.1
     Max: 1.0
     Default: 1.0
 **@language**:  Specifies the BCP-47 language tag that represents the voice.
