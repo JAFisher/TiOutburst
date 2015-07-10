@@ -1,5 +1,13 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Talk to me...d</Label>
+	<Window class="container" >
+        <ScrollView layout="vertical" height="Ti.UI.FILL">
+            <Button onClick="pause" top="100"> Pause </Button>
+            <Button onClick="resume" top="50"> Resume </Button>
+            <Button onClick="replay" top="50"> Replay </Button>
+            <Button onClick="speakInFrench" top="50"> Change To French </Button>
+            <Button onClick="speakInEnglish" top="50"> Change To English </Button>
+            <Button onClick="availableLanguages" top="50">  Available Languages</Button>
+        </ScrollView>
+
 	</Window>
 </Alloy>
