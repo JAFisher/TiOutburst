@@ -94,8 +94,9 @@ function pause(){
 function resume(){
     utter.resume();
 }
+
 function availableLanguages(){
-    var _available = utter. ();
+    var _available = utter.showAvailableLanguages();
     console.log(_available);
 }
 /*
@@ -104,6 +105,7 @@ function availableLanguages(){
 function speakInFrench(){
     utter.talk(storyInFrench);
 }
+
 function speakInEnglish(){
     utter.talk(story);
 }
