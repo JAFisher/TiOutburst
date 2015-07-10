@@ -75,9 +75,6 @@ storyInFrench = [{
 }];
 
 
-outburst.talk(story);
-
-
 /**
  * replay the current conversion.
  */
@@ -97,17 +94,37 @@ function resume(){
 
 function availableLanguages(){
     var _available = outburst.showAvailableLanguages();
-    console.log(_available);
 }
 /*
     mon qui!
  */
+
+var currentStoryBeingRead;
 function speakInFrench(){
     outburst.talk(storyInFrench);
+    $.presentationText.text = storyInFrench[0].text;
+    currentStoryBeingRead = storyInFrench;
 }
 
 function speakInEnglish(){
     outburst.talk(story);
+    $.presentationText.text = story[0].text;
+    currentStoryBeingRead = story;
+}
+
+outburst.addEventListener("paragraphRead", function(e){
+  var position = e.paragraphIndex;
+  if (currentStoryBeingRead.length != (position + 1)){
+    $.presentationText.text = currentStoryBeingRead[position + 1].text;
+  }
+
+});
+
+
+function init(){
+    setTimeout(function(){
+        speakInEnglish();
+    }, 1000);
 }
 
 $.index.open();

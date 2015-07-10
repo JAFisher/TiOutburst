@@ -58,8 +58,20 @@ use with outburst.
 ```
 outburst.showAvailableLanguages
 ```
-----
+EventListeners
+--------------
+**@paragraphRead**: is triggered when a paragraph ie outburstConstruct is finished being spoken. it @return an object with the follow keys
+
+  paragraphIndex: Integer @index
+
+```
+outburst.addEventListener("paragraphRead", function(e){
+  console.log(e.paragraphIndex, "has been read.");
+});
+```
+
 Supported Languages
+-------------------
 ```
   ar-SA
   cs-CZ

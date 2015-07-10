@@ -1,12 +1,15 @@
 <Alloy>
-	<Window class="container" >
-        <ScrollView layout="vertical" height="Ti.UI.FILL">
-            <Button onClick="pause" top="100"> Pause </Button>
-            <Button onClick="resume" top="50"> Resume </Button>
-            <Button onClick="replay" top="50"> Replay </Button>
-            <Button onClick="speakInFrench" top="50"> Change To French </Button>
-            <Button onClick="speakInEnglish" top="50"> Change To English </Button>
-            <Button onClick="availableLanguages" top="50">  Available Languages</Button>
+	<Window class="container" layout="vertical" onOpen="init" >
+        <View height="30%">
+            <Label id="presentationText" />
+        </View>
+        <ScrollView layout="vertical" height="70%" backgroundColor="black">
+                <Button onClick="pause" > Pause </Button>
+                <Button onClick="resume" > Resume </Button>
+                <Button onClick="replay" > Replay </Button>
+                <Button onClick="speakInFrench" > Change To French </Button>
+                <Button onClick="speakInEnglish" > Change To English </Button>
+                <Button onClick="availableLanguages" >  Available Languages</Button>
         </ScrollView>
 
 	</Window>

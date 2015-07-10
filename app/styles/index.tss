@@ -13,3 +13,18 @@
 		fontSize: 12
 	}
 }
+
+"Button": {
+    color: "#fff",
+    top: 25
+}
+
+"#presentationText" : {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: {
+        fontSize: 16
+    },
+    left: 30,
+    width: Ti.UI.FILL,
+    right: 30
+}
