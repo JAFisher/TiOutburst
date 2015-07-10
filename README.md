@@ -43,7 +43,7 @@ utter.talk([UtteranceConstructs]);
 ```
 **@talk** is the only method for starting the text to speech.
 ```
-It accepts an Array of Utterance Objects
+It accepts an Array of UtteranceConstruct Objects
 ```
 **@pauseTalking** : will stop the current utterClass from talking the state can be **@resume** to keep on talking
 ```
