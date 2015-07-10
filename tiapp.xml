@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.jamiefisher.utterance</id>
-    <name>utteranceExample</name>
+    <id>com.jamiefisher.outburstExample</id>
+    <name>outburstExample</name>
     <version>1.0</version>
     <publisher>JF</publisher>
     <url>http://</url>
-    <description/>
+    <description>undefined</description>
     <copyright>2015 by JF</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -48,7 +48,7 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="iphone">com.jamiefisher.utterance</module>
+        <module platform="iphone">com.jamiefisher.outburst</module>
     </modules>
     <deployment-targets>
         <target device="android">false</target>

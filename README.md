@@ -1,4 +1,4 @@
-Little about Utterance
+Little about outburst
 ----------------------
 A simple text to speech Module for IOS via Titanium.
 It free to use (buy me a pizza sometime if you like it)
@@ -10,11 +10,11 @@ Please feel free to report bugs i'll try get on it or requested features.
 Initialization
 --------------
 ```
-var utter = require("com.jamiefisher.utterance");
+var outburst = require("com.jamiefisher.outburst");
 ```
 Objects Constructs
 ------------------
-**@UtteranceConstruct**: Utterance is what you want to be said in an paragraph, it is configurable to the following parameters.
+**@OutburstContruct**: outburst is what you want to be said in an paragraph, it is configurable to the following parameters.
 
 **@text**: **@String** is what you want to spoken
 
@@ -24,7 +24,7 @@ Objects Constructs
 
     Default: 1.0
 
-**@volume**: **@Float** the volume level of the spoken Utterance.
+**@volume**: **@Float** the volume level of the spoken outburst.
 
     Min: 0.1
     Max: 1.0
@@ -37,26 +37,26 @@ Objects Constructs
 Events
 ------
 
-**@talk** : Expects Array of UtteranceConstructs
+**@talk** : Expects Array of OutburstContructs
 ```
-utter.talk([UtteranceConstructs]);
+outburst.talk([OutburstContructs]);
 ```
 **@talk** is the only method for starting the text to speech.
 ```
-It accepts an Array of UtteranceConstruct Objects
+It accepts an Array of OutburstContruct Objects
 ```
-**@pauseTalking** : will stop the current utterClass from talking the state can be **@resume** to keep on talking
+**@pauseTalking** : will stop the current outburstClass from talking the state can be **@resume** to keep on talking
 ```
-utter.pauseTalking();
+outburst.pauseTalking();
 ```
 **@resume:** will carry on talking where it left off from an @pause.
 ```
-utter.resume();
+outburst.resume();
 ```
 **@showAvailableLanguages:** @returns Array of language Codes available to
-use with utterance.
+use with outburst.
 ```
-utter.showAvailableLanguages
+outburst.showAvailableLanguages
 ```
 ----
 Supported Languages
@@ -104,10 +104,10 @@ In the pipeline
 
 **10th July**
 
-Changes to utterance to allow delays between paragraphs.
+Changes to outburst to allow delays between paragraphs.
 
-UtteranceConstruct:beforeDelay
+OutburstContruct:beforeDelay
 
-UtteranceConstruct:afterDelay
+OutburstContruct:afterDelay
 
-Going to add a varity of events including when a paragraph has finished been read, when the entire utterance collection is finished and hopefully something cool word by word tracking.
+Going to add a varity of events including when a paragraph has finished been read, when the entire outburst collection is finished and hopefully something cool word by word tracking.

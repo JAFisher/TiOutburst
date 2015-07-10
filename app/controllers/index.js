@@ -1,4 +1,4 @@
-var utter = require("com.jamiefisher.utterance");
+var outburst = require("com.jamiefisher.outburst");
 
 
 var story = [{
@@ -75,39 +75,39 @@ storyInFrench = [{
 }];
 
 
-utter.talk(story);
+outburst.talk(story);
 
 
 /**
  * replay the current conversion.
  */
 function replay(){
-    utter.replay();
+    outburst.replay();
 }
 /**
- * utterance will stop straight away.
+ * outburstance will stop straight away.
  */
 function pause(){
-    utter.pauseTalking();
+    outburst.pauseTalking();
 }
 
 function resume(){
-    utter.resume();
+    outburst.resume();
 }
 
 function availableLanguages(){
-    var _available = utter.showAvailableLanguages();
+    var _available = outburst.showAvailableLanguages();
     console.log(_available);
 }
 /*
     mon qui!
  */
 function speakInFrench(){
-    utter.talk(storyInFrench);
+    outburst.talk(storyInFrench);
 }
 
 function speakInEnglish(){
-    utter.talk(story);
+    outburst.talk(story);
 }
 
 $.index.open();
